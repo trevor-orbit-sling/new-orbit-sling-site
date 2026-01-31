@@ -9,6 +9,36 @@
   --max-width: 1120px;
 }
 
+/* Header Styles */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 24px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.header-logo img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.btn.small {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+
 * {
   box-sizing: border-box;
 }
