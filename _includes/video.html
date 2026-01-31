@@ -1,0 +1,16 @@
+<section class="section" id="video">
+  <div class="container">
+    <p class="eyebrow">Quick view</p>
+    <h2>{{ include.title | default: "How the system works" }}</h2>
+    <div class="video">
+      {% if include.video_url and include.video_url != "" %}
+      <div class="video-frame">
+        <iframe src="{{ include.video_url }}" title="Orbit Sling overview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      {% else %}
+      <div class="video-frame"></div>
+      <p class="meta">Drop in a video URL when ready.</p>
+      {% endif %}
+    </div>
+  </div>
+</section>

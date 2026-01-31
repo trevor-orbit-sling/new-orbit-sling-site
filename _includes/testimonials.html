@@ -1,0 +1,14 @@
+<section class="section" id="testimonials">
+  <div class="container">
+    <p class="eyebrow">Testimonials</p>
+    <h2>What teams say after the system is in place.</h2>
+    <div class="testimonials">
+      {% for item in site.data.testimonials %}
+      <div class="testimonial">
+        <p>"{{ item.quote }}"</p>
+        <p class="meta">{{ item.name }} · {{ item.title }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
